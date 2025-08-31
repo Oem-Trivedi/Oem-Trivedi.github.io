@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oem Trivedi - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Main CSS generated through npm run build -->
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Explicitly configure Tailwind for class-based dark mode -->
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300">
+<!-- <body class="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-slate-900 dark:to-black transition-colors duration-300"></body> -->
+<!-- <body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300"> -->
 <!-- Header & Navigation -->
+ <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+
+
 <header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     
@@ -23,86 +32,100 @@
     <!-- Owl Carousel Navigation -->
     <nav class="flex-1 mx-6">
       <div class="owl-carousel owl-theme nav-carousel">
-        <div class="nav-item"><a href="index.html">About</a></div>
+        <div class="nav-item"><a href="#about">About</a></div>
         <div class="nav-item"><a href="publications.html">Publications</a></div>
         <div class="nav-item"><a href="talks.html">Talks</a></div>
         <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
         <div class="nav-item"><a href="honors.html">Honors</a></div>
         <div class="nav-item"><a href="media.html">Media Appearances</a></div>
-        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
         <div class="nav-item"><a href="#contact">Contact</a></div>
       </div>
     </nav>
     
     <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" 
-      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
-      aria-label="Toggle theme">
-      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-      </svg>
-      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
+          <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+          <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        </button>
   </div>
 </header>
 
 <main class="container mx-auto px-6 py-12">
         <section id="media-list">
-            <h1 class="section-title text-4xl">Media Appearances</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 text-center">Media Appearances</h1>
             <p class="text-center max-w-2xl mx-auto mb-12">Coverage of research and interviews across various national and international media platforms.</p>
 
-            <div class="max-w-4xl mx-auto space-y-8">
+            <div class="max-w-4xl mx-auto space-y-12">
                 <div class="card">
                     <h3 class="text-xl font-semibold text-slate-800 dark:text-white mb-4">Coverage on "The Long Freeze" Theory</h3>
-                    <p class="mb-6">The research on "The Long Freeze" has been the subject of significant media coverage globally. Below are some of the articles and features:</p>
-                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                    <p class="mb-6 text-sm">The research on "The Long Freeze" has been the subject of significant media coverage globally. Below are some of the articles and features:</p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
                         <a href="https://www.wionews.com/trending/universe-might-die-in-a-long-freeze-when-everything-halts-and-withers-away-770332" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>WION News</span></a>
                         <a href="https://www.popularmechanics.com/space/deep-space/a62684775/dark-matter-long-freeze/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Popular Mechanics</span></a>
+                        <a href="https://www.thebrighterside.news/post/from-big-bang-to-long-freeze-scientist-propose-surprising-end-to-the-universe/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>The Brighter Side</span></a>
                         <a href="https://www.livescience.com/physics-mathematics/dark-energy/the-universe-may-end-in-a-big-freeze-holographic-model-of-the-universe-suggests" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Live Science</span></a>
-                        <a href="https://www.iflscience.com/how-holographic-dark-energy-could-lead-to-the-end-of-the-universe-76467" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>IFLScience</span></a>
                         <a href="https://www.express.co.uk/news/science/1965086/end-of-world-warning-dark-energy-big-freeze" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Express.co.uk</span></a>
+                        <a href="https://www.indy100.com/science-tech/long-freeze-end-of-universe" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Indy100</span></a>
+                        <a href="https://www.good.is/scientists-find-holographic-dark-energy-that-could-end-the-universe-and-it-isnt-how-anyone-anticipated" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Good.is</span></a>
+                        <a href="https://www.freeastroscience.com/2024/10/the-universes-final-freeze-holographic.html?m=1" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Free Astro Science</span></a>
+                        <a href="https://www.iflscience.com/how-holographic-dark-energy-could-lead-to-the-end-of-the-universe-76467" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>IFLScience</span></a>
+                        <a href="https://brobible.com/culture/article/scientists-how-world-will-end/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>BroBible</span></a>
+                        <a href="https://www.chipchick.com/2024/10/new-research-suggests-holographic-dark-energy-could-halt-the-expansion-of-the-universe-and-cause-a-long-freeze-in-which-all-stars-wink-out-and-die" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Chip Chick</span></a>
+                        <a href="https://dailystar.com.lb/universe-end-freeze-everything-slowly-withers-away/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Daily Star</span></a>
+                        <a href="https://trustmyscience.com/long-freeze-pourrait-marquer-fin-univers-modele-holographique-energie-sombre/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>Trust My Science</span></a>
+                        <a href="https://infa.lt/114361/visatos-zuties-scenarijus-palaipsniui-viskas-sustos-uzges-ir-atves/" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="link-2" class="h-4 w-4"></i><span>INFA.lt</span></a>
+                        <a href="https://www.instagram.com/reel/DCFWOo-pNLI/?igsh=YXZ5OHlzYzY0Mnp0" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="instagram" class="h-4 w-4"></i><span>Instagram Reel 1</span></a>
+                        <a href="https://www.instagram.com/hashem.alghaili/reel/DB9itVasfkO/?locale=id&hl=af" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="instagram" class="h-4 w-4"></i><span>Instagram Reel 2</span></a>
                         <a href="https://www.youtube.com/watch?v=aV0bwBm20vw" target="_blank" class="flex items-center space-x-2 text-sky-600 dark:text-sky-400 hover:underline"><i data-lucide="youtube" class="h-4 w-4"></i><span>YouTube Feature</span></a>
                     </div>
                 </div>
 
-                <h2 class="section-subtitle text-center !mt-16">Interviews & Features</h2>
+                <div class="text-center">
+                    <h2 class="section-subtitle !text-2xl font-bold">Interviews & Features</h2>
+                </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="card">
                         <h4 class="font-semibold text-slate-800 dark:text-white">Ciel and Espace Feature</h4>
-                        <p class="text-sm">Work on Planck Star Remnants will be the feature article for the French popular science journal in September.</p>
+                        <p class="text-sm mt-1">Work on Planck Star Remnants will be the feature article for the French popular science journal in September.</p>
                     </div>
                     <div class="card">
                         <h4 class="font-semibold text-slate-800 dark:text-white">Samay Now News Channel</h4>
-                        <p class="text-sm">Full-length interview on life and journey in physics so far.</p>
+                        <p class="text-sm mt-1">Full-length interview on life and journey in physics so far, also uploaded to YouTube.</p>
+                    </div>
+                     <div class="card">
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Madhya Pradesh TV Interviews</h4>
+                        <p class="text-sm mt-1">Gave interviews to various news channels in September 2023 on the occasion of being invited to Jan Ashirvaad Yatra as the Pride of MP.</p>
+                    </div>
+                     <div class="card">
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Leader's Story</h4>
+                        <p class="text-sm mt-1">Interviewed by the media website about the journey in science.</p>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Jawabdehi Weekly Newspaper</h4>
+                        <p class="text-sm mt-1">Interview on work in cosmology, published in the weekly edition of 19th-25th September, 2022.</p>
                     </div>
                     <div class="card">
                         <h4 class="font-semibold text-slate-800 dark:text-white">Dainik Bhaskar</h4>
-                        <p class="text-sm">Interview published in newspaper, digital version, and broadcast on Bhaskar TV news channel (Sept 2022).</p>
+                        <p class="text-sm mt-1">Interview published in newspaper, digital version, and broadcast on Bhaskar TV news channel (Sept 2022). <a href="https://www.bhaskar.com/local/mp/indore/news/how-black-hole-swallows-stars-will-do-research-in-california-in-30-km-long-html" target="_blank" class="font-semibold text-sky-500 hover:underline">[Link]</a></p>
                     </div>
                     <div class="card">
-                        <h4 class="font-semibold text-slate-800 dark:text-white">Leader's Story</h4>
-                        <p class="text-sm">Interviewed by the media website about the journey in science.</p>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Hindustan Mail</h4>
+                        <p class="text-sm mt-1">Interview on work in cosmology, published in the daily newspaper dated 5th September 2022.</p>
                     </div>
-                     <div class="card">
-                        <h4 class="font-semibold text-slate-800 dark:text-white">Jawabdehi Weekly Newspaper</h4>
-                        <p class="text-sm">Interview on work in cosmology, published in the weekly edition of 19th-25th September, 2022.</p>
-                    </div>
-                     <div class="card">
-                        <h4 class="font-semibold text-slate-800 dark:text-white">Hindustan Mail & Prajaatantra</h4>
-                        <p class="text-sm">Interviews published in daily newspapers on cosmology work and selection as a speaker at NYS Camp (Sept & July 2022).</p>
+                    <div class="card">
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Prajaatantra</h4>
+                        <p class="text-sm mt-1">Interview published on selection as a speaker at the NYS Camp, in the daily newspaper dated 3rd July 2022.</p>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Contact -->
+
+  <!-- Contact -->
         <section id="contact" class="py-16 text-center">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Get In Touch</h2>
             <p class="max-w-2xl mx-auto mb-8">
                 I am always open to discussing new research, ideas, or opportunities for collaboration.
             </p>
@@ -120,28 +143,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-100 dark:bg-slate-800/50 mt-16">
-        <div class="container mx-auto px-6 py-8 text-center text-slate-500 dark:text-slate-400">
+    <footer class="bg-gray-100 dark:bg-gray-800/50 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400">
             <p>&copy; <span id="year"></span> Oem Trivedi. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        lucide.createIcons();
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Update theme icon visibility based on theme
-        const themeObserver = new MutationObserver(() => {
-            const isDark = document.documentElement.classList.contains('dark');
-            document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-            document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-        });
-        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-        // Manually trigger initial check
-        const isDark = document.documentElement.classList.contains('dark');
-        document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-        document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
+
