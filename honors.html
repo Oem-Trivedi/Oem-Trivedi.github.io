@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oem Trivedi - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300">
+<!-- Header & Navigation -->
+<header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <a href="index.html" class="text-xl font-bold text-gray-800 dark:text-white">Oem Trivedi</a>
+    
+    <!-- Owl Carousel Navigation -->
+    <nav class="flex-1 mx-6">
+      <div class="owl-carousel owl-theme nav-carousel">
+        <div class="nav-item"><a href="index.html">About</a></div>
+        <div class="nav-item"><a href="publications.html">Publications</a></div>
+        <div class="nav-item"><a href="talks.html">Talks</a></div>
+        <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
+        <div class="nav-item"><a href="honors.html">Honors</a></div>
+        <div class="nav-item"><a href="media.html">Media Appearances</a></div>
+        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
+        <div class="nav-item"><a href="#contact">Contact</a></div>
+      </div>
+    </nav>
+    
+    <!-- Theme Toggle -->
+    <button onclick="toggleTheme()" 
+      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
+      aria-label="Toggle theme">
+      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+      </svg>
+      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="honors-list">
+            <h1 class="section-title text-4xl">Honors & Awards</h1>
+            <p class="text-center max-w-2xl mx-auto mb-12">A collection of recognitions and awards received for contributions to science and research.</p>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-1 gap-6">
+                <div class="card honor-item">
+                    <i data-lucide="star" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Fellow of the Royal Astronomical Society</h4>
+                        <p class="text-sm">2022-Present. Currently the youngest fellow in the world and the only active fellow from the state of Madhya Pradesh, India.</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="award" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Pride of Indore & Pride of MP</h4>
+                        <p class="text-sm">Conferred by the honorable Member of Parliament from the constituency of Indore and the state government of Madhya Pradesh, India.</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="trophy" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">InRes Young Scientist Award</h4>
+                        <p class="text-sm">Awarded in 2022.</p>
+                    </div>
+                </div>
+                 <div class="card honor-item">
+                    <i data-lucide="trophy" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Young Achiever Award</h4>
+                        <p class="text-sm">Awarded by the Indian Achiever's Forum in 2022.</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="book-marked" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">India Book of Records Holder</h4>
+                        <p class="text-sm">For the "Highest number of technical research talks given by an Asian undergraduate student in international research conferences."</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="presentation" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Invited Speaker at National Youth Science Camp 22</h4>
+                        <p class="text-sm">First ever Indian student to have received this opportunity.</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="user-check" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Member of the American Physical Society</h4>
+                        <p class="text-sm">2022-Present.</p>
+                    </div>
+                </div>
+                <div class="card honor-item">
+                    <i data-lucide="globe" class="h-8 w-8 text-amber-400 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 dark:text-white">Representative for India</h4>
+                        <p class="text-sm">At the 2019 London International Youth Science Forum at Imperial College London.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="py-16 text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto mb-8">
+                I am always open to discussing new research, ideas, or opportunities for collaboration.
+            </p>
+            <div class="inline-flex items-center space-x-4 p-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+                <i data-lucide="mail" class="h-6 w-6 text-sky-500"></i>
+                <a href="mailto:oem.trivedi@vanderbilt.edu" class="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-sky-500 dark:hover:text-sky-400">
+                    oem.trivedi@vanderbilt.edu
+                </a>
+            </div>
+             <p class="mt-8 text-sm text-gray-500 dark:text-gray-400">
+                Department of Physics and Astronomy<br>
+                Vanderbilt University, Nashville, TN, 37235, USA
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 dark:bg-slate-800/50 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500 dark:text-slate-400">
+            <p>&copy; <span id="year"></span> Oem Trivedi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Update theme icon visibility based on theme
+        const themeObserver = new MutationObserver(() => {
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
+            document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
+        });
+        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+        // Manually trigger initial check
+        const isDark = document.documentElement.classList.contains('dark');
+        document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
+        document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* body {
+    font-family: 'Inter', sans-serif;
+} */
+
+/* Section Titles */
+/* .section-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1e293b;
+    text-align: center;
+} */
+/* .dark .section-title { color: #ffffff; } */
+
+/* Section Subtitles */
+/* .section-subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #334155;
+} */
+/* .dark .section-subtitle { color: #e2e8f0; } */
+
+/* Card Component */
+/* .card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+                0 4px 6px -4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+} */
+/* .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),
+                0 10px 10px -5px rgba(0,0,0,0.04);
+} */
+/* .dark .card { background-color: #1e293b; } */
+
+/* Tags */
+/* .tag {
+    display: inline-block;
+    background-color: #e0f2fe; 
+    color: #075985;            
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+} */
+/* .dark .tag {
+    background-color: rgba(12,74,110,0.5);
+    color: #7dd3fc;
+} */
+
+/* Publications list */
+/* .publication-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+} */
+/* .dark .publication-item { border-bottom: 1px solid #334155; } */
+/* .publication-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+} */
+
+/* Navigation items */
+.nav-item {
+  display: inline-block;
+  background: #f1f5f9;   /* slate-100 (instead of white) */
+  padding: 6px 16px;
+  border-radius: 9999px;
+  text-align: center;
+  font-weight: 600;
+  margin: 4px;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.nav-item a {
+  color: #1e293b; /* slate-900 */
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background: #e0f2fe; /* sky-100 */
+}
+
+.dark .nav-item {
+  background: #1e293b;
+}
+.dark .nav-item a {
+  color: #f8fafc;
+}
+
+.dark .nav-item:hover {
+  background: #334155; /* slate-700 */
+}
