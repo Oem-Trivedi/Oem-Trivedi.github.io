@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oem Trivedi - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Main CSS generated through npm run build -->
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Explicitly configure Tailwind for class-based dark mode -->
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300">
+<!-- <body class="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-slate-900 dark:to-black transition-colors duration-300"></body> -->
+<!-- <body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300"> -->
 <!-- Header & Navigation -->
+ <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+
+
 <header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     
@@ -23,74 +32,63 @@
     <!-- Owl Carousel Navigation -->
     <nav class="flex-1 mx-6">
       <div class="owl-carousel owl-theme nav-carousel">
-        <div class="nav-item"><a href="index.html">About</a></div>
+        <div class="nav-item"><a href="#about">About</a></div>
         <div class="nav-item"><a href="publications.html">Publications</a></div>
         <div class="nav-item"><a href="talks.html">Talks</a></div>
         <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
         <div class="nav-item"><a href="honors.html">Honors</a></div>
-        <div class="nav-item"><a href="books.html">Books</a></div>
-        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
+        <div class="nav-item"><a href="media.html">Media Appearances</a></div>
         <div class="nav-item"><a href="#contact">Contact</a></div>
       </div>
     </nav>
     
     <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" 
-      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
-      aria-label="Toggle theme">
-      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-      </svg>
-      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
+          <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+          <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        </button>
   </div>
 </header>
 
 <main class="container mx-auto px-6 py-12">
         <section id="all-talks">
-            <h1 class="section-title text-4xl">Talks & Seminars</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-12">Talks & Seminars</h1>
 
-            <div class="max-w-4xl mx-auto">
-                
-                <h2 class="section-subtitle">Conference Talks</h2>
-                <div class="card">
-                    <ol class="list-decimal list-inside space-y-4">
-                        <li class="talk-item"><strong>Russian Gravitational Conference (2020)</strong>: "On the Trans-Planckian Censorship Conjecture and Constant Roll Inflation." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>Cosmology from Home (2020)</strong>: "On the Swampland Conjectures and Single Field Inflation in General Cosmological Scenarios." <em>(Youngest speaker, full fee waiver)</em></li>
-                        <li class="talk-item"><strong>Korean Institute of Advanced Studies Workshop (2020)</strong>: "On the Exact Solution Approach to Warm Inflation." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>British Gravitational Conference (2021)</strong>: "On Rejuvenating the Hope of a Swampland Consistent Inflated Multiverse with Tachyonic Inflation in the High Energy RS-II Braneworld." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>14th Int. Workshop on Particle Physics and Cosmology (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation in Modified Cosmological Scenarios." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>Strings 2021 (Poster Talk)</strong>: "On Rejuvenating the Hope of a Swampland Consistent Inflated Multiverse..." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>Cosmo'21 (Poster Talk)</strong>: "On Lorentz Violating Inflation and the Swampland." <em>(Admitted on student fellowship)</em></li>
-                        <li class="talk-item"><strong>Strings and Fields Conference, Yukawa Institute (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation..." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>Brookhaven Forum, BNL (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation..." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>Atlantic General Relativity Meeting (2022)</strong>: "On Type V Singularities in Non-Standard Cosmological Backgrounds." <em>(Youngest speaker)</em></li>
-                        <li class="talk-item"><strong>CPT Meeting, Indiana University (2022)</strong>: "On Lorentz Violating Inflation and the Swampland."</li>
-                        <li class="talk-item"><strong>3rd EuCAPT Symposium, CERN (Poster Talk)</strong>: "On Cosmological Singularities in Non-Standard Scenarios."</li>
-                        <li class="talk-item"><strong>APS April Meeting (2023)</strong>: "On Cosmological Singularities in Exotic Backgrounds."</li>
-                        <li class="talk-item"><strong>2023 EuCAPT Symposium, CERN (Poster Talk)</strong>: "On Cosmological Singularities in Non-Standard Backgrounds."</li>
-                    </ol>
-                </div>
-
-                <h2 class="section-subtitle">Invited Seminar Talks</h2>
-                <div class="card">
-                    <ul class="list-disc list-inside space-y-4">
-                        <li class="talk-item"><strong>Ahmedabad University</strong>: Talk in the "Mathematical and Physical Sciences" divisional seminar series.</li>
-                        <li class="talk-item"><strong>"Majorana Raychaudhuri" Seminar Series (March 2023)</strong>: Invited speaker.</li>
-                        <li class="talk-item"><strong>LSST DESC Collaboration (June 2023)</strong>: Seminar for the "Beyond Lambda CDM" group.</li>
-                        <li class="talk-item"><strong>LSST DESC Collaboration (May 2024)</strong>: Seminar for the "Beyond Lambda CDM" group.</li>
-                    </ul>
-                </div>
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">Conference Talks</h2>
+                <ol class="list-decimal list-inside space-y-4 text-slate-700 dark:text-slate-300">
+                    <li class="talk-item"><strong>Russian Gravitational Conference, Peter the Great St. Petersburg University (2020)</strong>: "On the Trans-Planckian Censorship Conjecture and Constant Roll Inflation." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>Cosmology from Home (2020)</strong>: "On the Swampland Conjectures and Single Field Inflation in General Cosmological Scenarios." <em>(Youngest speaker, full fee waiver)</em></li>
+                    <li class="talk-item"><strong>Korean Institute of Advanced Studies Workshop on Cosmology and Structure Formation (2020)</strong>: "On the Exact Solution Approach to Warm Inflation." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>British Gravitational Conference, University College Dublin (2021)</strong>: "On Rejuvenating the Hope of a Swampland Consistent Inflated Multiverse with Tachyonic Inflation in the High Energy RS-II Braneworld." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>14th International Workshop on the Interconnections Between Particle Physics and Cosmology, University of Oklahoma (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation in Modified Cosmological Scenarios." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>Strings 2021 (Poster Talk)</strong>: "On Rejuvenating the Hope of a Swampland Consistent Inflated Multiverse with Tachyonic Inflation in the High Energy RS-II Braneworld." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>Cosmo’21 (Poster Talk) (2021)</strong>: "On Lorentz Violating Inflation and the Swampland." <em>(Admitted on a student fellowship from the University of Illinois at Urbana-Champaign)</em></li>
+                    <li class="talk-item"><strong>Strings and Fields Conference, Yukawa Institute of Theoretical Physics (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation in Modified Cosmological Scenarios." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>Brookhaven Forum, Brookhaven National Laboratory (2021)</strong>: "On the Swampland Conjectures and Single Field Inflation in Modified Cosmological Scenarios." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>Atlantic General Relativity Meeting (2022)</strong>: "On Type V Singularities in Non-Standard Cosmological Backgrounds." <em>(Youngest speaker)</em></li>
+                    <li class="talk-item"><strong>CPT Meeting, Indiana University Bloomington (2022)</strong>: "On Lorentz Violating Inflation and the Swampland."</li>
+                    <li class="talk-item"><strong>3rd EuCAPT Symposium, CERN (Poster Talk)</strong>: "On Cosmological Singularities in Non-Standard Scenarios."</li>
+                    <li class="talk-item"><strong>APS April Meeting (2023)</strong>: "On Cosmological Singularities in Exotic Backgrounds."</li>
+                    <li class="talk-item"><strong>2023 EuCAPT Symposium, CERN (Poster Talk)</strong>: "On Cosmological Singularities in Non-Standard Backgrounds."</li>
+                </ol>
+            </div>
+            
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">Invited Seminars</h2>
+                <ol class="list-decimal list-inside space-y-4 text-slate-700 dark:text-slate-300">
+                    <li class="talk-item">Gave a talk in the "Mathematical and Physical Sciences" divisional seminar series at Ahmedabad University.</li>
+                    <li class="talk-item">Gave a talk in the "Majorana Raychaudhuri" seminar series on March 17th 2023. <a href="https://sites.google.com/view/joint-seminars-salerno-kolkata/home" target="_blank" class="font-semibold text-sky-500 hover:underline">[Link]</a></li>
+                    <li class="talk-item">Gave a seminar for the LSST DESC collaboration's Beyond Lambda CDM group on 7th June 2023.</li>
+                    <li class="talk-item">Gave a seminar for the LSST DESC Collaboration's Beyond Lambda CDM group on 1st May 2024.</li>
+                </ol>
             </div>
         </section>
+    </main>
 
-        <!-- Contact -->
+     <!-- Contact -->
         <section id="contact" class="py-16 text-center">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Get In Touch</h2>
             <p class="max-w-2xl mx-auto mb-8">
                 I am always open to discussing new research, ideas, or opportunities for collaboration.
             </p>
@@ -108,28 +106,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-100 dark:bg-slate-800/50 mt-16">
-        <div class="container mx-auto px-6 py-8 text-center text-slate-500 dark:text-slate-400">
+    <footer class="bg-gray-100 dark:bg-gray-800/50 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400">
             <p>&copy; <span id="year"></span> Oem Trivedi. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        lucide.createIcons();
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Update theme icon visibility based on theme
-        const themeObserver = new MutationObserver(() => {
-            const isDark = document.documentElement.classList.contains('dark');
-            document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-            document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-        });
-        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-        // Manually trigger initial check
-        const isDark = document.documentElement.classList.contains('dark');
-        document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-        document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

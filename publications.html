@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oem Trivedi - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Main CSS generated through npm run build -->
+  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Explicitly configure Tailwind for class-based dark mode -->
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300">
+<!-- <body class="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-slate-900 dark:to-black transition-colors duration-300"></body> -->
+<!-- <body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300"> -->
 <!-- Header & Navigation -->
+ <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+
+
 <header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     
@@ -23,98 +32,227 @@
     <!-- Owl Carousel Navigation -->
     <nav class="flex-1 mx-6">
       <div class="owl-carousel owl-theme nav-carousel">
-        <div class="nav-item"><a href="index.html">About</a></div>
+        <div class="nav-item"><a href="#about">About</a></div>
         <div class="nav-item"><a href="publications.html">Publications</a></div>
         <div class="nav-item"><a href="talks.html">Talks</a></div>
         <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
         <div class="nav-item"><a href="honors.html">Honors</a></div>
-        <div class="nav-item"><a href="books.html">Books</a></div>
-        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
+        <div class="nav-item"><a href="media.html">Media Appearances</a></div>
         <div class="nav-item"><a href="#contact">Contact</a></div>
       </div>
     </nav>
     
     <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" 
-      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
-      aria-label="Toggle theme">
-      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-      </svg>
-      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
+          <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+          <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        </button>
   </div>
 </header>
 
- <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-12">
         <section id="all-publications">
-            <h1 class="section-title text-4xl">Publications</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-12">Publications</h1>
 
-            <div class="max-w-4xl mx-auto">
-                
-                <h2 class="section-subtitle">Published/Accepted Original Journal Papers</h2>
-                <div class="card">
-                    <ol class="list-decimal list-inside space-y-4">
-                        <li class="publication-item"><strong>Trivedi (first author), A. Bidlan and P. Moniz</strong>, "Fractional Holographic Dark Energy," <em>Physics Letters B</em>, Vol. 858, 2024. <a href="https://doi.org/10.1016/j.physletb.2024.139074" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and M. Khlopov</strong>, "On rips and cosmological singularities in a universe merging with baby universes," <em>JCAP</em>, 09 (2024) 040. <a href="https://doi.org/10.1088/1475-7516/2024/09/040" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and R.J. Scherrer</strong>, "New perspectives on future rip scenarios with holographic dark energy," <em>Physical Review D</em>, 110, 023521. <a href="https://doi.org/10.1103/PhysRevD.110.023521" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>I. Brevik, M. Khlopov, S. Odintsov, A.V. Timoshkin and O. Trivedi</strong>, "Rips and regular future scenarios with Holographic Dark Energy," <em>Eur.Phys.J.C</em>, 84 (2024) 12, 1269. <a href="https://doi.org/10.1140/epjc/s10052-024-13601-z" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>P. Bambhaniya, O. Trivedi, I. Dymnikova, P. S. Joshi, M. Khlopov</strong>, "On the interactions of black holes and cosmic strings," <em>Physics of the Dark Universe</em>, 2024, 101553. <a href="https://doi.org/10.1016/j.dark.2024.101553" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author), M. Khlopov and A.V. Timoshkin</strong>, "Tsallis Holographic Dark Energy with Power Law Ansatz Approach," <em>Symmetry</em>, 2024, 16(4), 446. <a href="https://doi.org/10.3390/sym16040446" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and A.V. Timoshkin</strong>, "Little Rip, Pseudo Rip and bounce cosmology with generalized equation of state in non-standard backgrounds," <em>Eur. Phys.J.C</em>, 84 (2024) 3, 277. <a href="https://doi.org/10.1140/epjc/s10052-024-12640-w" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "The exact solution approach to warm inflation," <em>Astropart. Phys.</em>, 158 (2024) 102951. <a href="https://doi.org/10.1016/j.astropartphys.2024.102951" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author), M. Khlopov, J. Said and R. Nunes</strong>, "Cosmological singularities in f(T, B) gravity," <em>Eur.Phys.J.C</em>, 83 (2023) 11, 1017. <a href="https://doi.org/10.1140/epjc/s10052-023-12204-4" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author), S. Kaur, P.S. Joshi</strong>, "Cosmological singularities in non-canonical models of dark energy," <em>Physics of the Dark Universe</em>, 42 (2023) 101366. <a href="https://doi.org/10.1016/j.dark.2023.101366" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Another look on the connections of Hubble tension with the Heisenberg Uncertainty Principle," <em>Physics of the Dark Universe</em>, 39 (2023) 101150. <a href="https://doi.org/10.1016/j.dark.2022.101150" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and M. Khlopov</strong>, "Singularity formation in asymptotically safe cosmology with inhomogeneous equation of state," <em>JCAP</em>, 11 (2022) 007. <a href="https://doi.org/10.1088/1475-7516/2022/11/007" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Type V singularities with inhomogeneous equations of state," <em>Physics Letters B</em>, 835 (2022) 137494. <a href="https://doi.org/10.1016/j.physletb.2022.137494" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and M. Khlopov</strong>, "On finite time singularities in scalar field dark energy models based in the RS-II Braneworld," <em>European Physical Journal C</em>, 82 (2022) 800. <a href="https://doi.org/10.1140/epjc/s10052-022-10767-2" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and M. Khlopov</strong>, "Type V singularities in non-standard cosmological backgrounds," <em>Physics of the Dark Universe</em>, 36 (2022) 101041. <a href="https://doi.org/10.1016/j.dark.2022.101041" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Rejuvenating the hope of a swampland consistent inflated multiverse with tachyonic inflation in the high energy RS-II Braneworld," <em>Modern Physics Letters A</em>, Vol. 37, No. 24, 2250162 (2022). <a href="https://doi.org/10.1142/S0217732322501620" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Lorentz violating inflation and the Swampland (2020)," <em>European Physical Journal Plus</em>, 137 (2022) 4, 507. <a href="https://doi.org/10.1140/epjp/s13360-022-02719-2" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Implications of single field inflation in general cosmological scenarios on the nature of dark energy given the swampland conjectures (2020)," <em>International Journal of Geometric Methods in Modern Physics</em>, 18 (2021) 14, 2150231. <a href="https://doi.org/10.1142/S0219887821502315" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Swampland conjectures and single field inflation in modified cosmological scenarios," <em>International Journal of Modern Physics D</em>, Vol. 32, No. 01, 2250130 (2023). <a href="https://doi.org/10.1142/S0218271822501309" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>A. Bidlan, P. Moniz and O. Trivedi</strong>, "Reconstructing FHDE with Scalar and Gauge Fields," <em>Eur.Phys.J.C</em>, 85 (2025) 5, 520. <a href="https://doi.org/10.1140/epjc/s10052-025-14238-2" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi (first author) and A. Loeb</strong>, "Could Planck Star Remnants be Dark Matter?," <em>Physics of the Dark Universe</em>, 2025, 102003. <a href="https://doi.org/10.1016/j.dark.2025.102003" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>M. Krasnov, O. Trivedi and M. Khlopov</strong>, "Kantowski-Sachs cosmological model with axion-like scalar field and dark energy," accepted for publication in <em>Physics of Atomic Nuclei</em>.</li>
-                    </ol>
-                </div>
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">Published & Accepted Papers</h2>
+                <ol class="list-decimal list-inside space-y-6 text-slate-700 dark:text-slate-300">
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Abraham Loeb</strong>, "Could planck star remnants be dark matter?," <em>Phys.Dark Univ. 49 (2025), 102003</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2025.102003" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2506.03334" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Eleonora Di Valentino et al. (CosmoVerse Network Collaboration)</strong>, "The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics," <em>Phys.Dark Univ. 49 (2025), 101965</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2025.101965" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2504.01669" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Ayush Bidlan, Paulo Moniz, Oem Trivedi</strong>, "Reconstructing Fractional Holographic Dark Energy with scalar and gauge fields," <em>Eur.Phys.J.C 85 (2025) 5, 520</em>.
+                        <a href="https://doi.org/10.1140/epjc/s10052-025-14238-2" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2502.00292" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>M. Krasnov, O. Trivedi and M. Khlopov</strong>, "Kantowski-Sachs cosmological model with axion-like scalar field and dark energy," accepted for publication in <em>Physics of Atomic Nuclei</em>.
+                         <a href="https://arxiv.org/abs/2410.09571" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>I. Brevik, Maxim Khlopov, S.D. Odintsov, Alexander V. Timoshkin, Oem Trivedi</strong>, "Rips and regular future scenario with holographic dark energy: a comprehensive look," <em>Eur.Phys.J.C 84 (2024) 12, 1269</em>.
+                        <a href="https://doi.org/10.1140/epjc/s10052-024-13601-z" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2411.10984" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Ayush Bidlan, Paulo Moniz</strong>, "Fractional holographic dark energy," <em>Phys.Lett.B 858 (2024), 139074</em>.
+                        <a href="https://doi.org/10.1016/j.physletb.2024.139074" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2407.16685" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Parth Bambhaniya, Oem Trivedi, Irina Dymnikova, Pankaj S. Joshi, Maxim Khlopov</strong>, "On the interactions of black holes and cosmic strings," <em>Phys.Dark Univ. 46 (2024), 101553</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2024.101553" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Robert J. Scherrer</strong>, "New perspectives on future rip scenarios with holographic dark energy," <em>Phys.Rev.D 110 (2024) 2, 2</em>.
+                        <a href="https://doi.org/10.1103/PhysRevD.110.023521" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2404.08912" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov, Alexander V. Timoshkin</strong>, "Tsallis Holographic Dark Energy with Power Law Ansatz Approach," <em>Symmetry 16 (2024) 4, 446</em>.
+                        <a href="https://doi.org/10.3390/sym16040446" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2402.05784" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov</strong>, "Impossibility of rips and cosmological singularities in a universe merging with baby universes," <em>JCAP 09 (2024), 040</em>.
+                        <a href="https://doi.org/10.1088/1475-7516/2024/09/040" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2401.13251" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>O. Trivedi</strong>, "Quantum gravity in the skies?," <em>Astronomy & Geophysics, Volume 65, Issue 5, October 2024, Pages 5.20-5.27</em>.
+                        <a href="https://doi.org/10.1093/astrogeo/atae055" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov, Jackson Levi Said, Rafael C. Nunes</strong>, "Cosmological singularities in $f(T,\phi)$ gravity," <em>Eur.Phys.J.C 83 (2023) 11, 1017</em>.
+                        <a href="https://doi.org/10.1140/epjc/s10052-023-12204-4" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2310.20222" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi, Simran Kaur Saggu, Pankaj S. Joshi</strong>, "Cosmological singularities in non-canonical models of dark energy," <em>Phys.Dark Univ. 42 (2023), 101366</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2023.101366" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2310.00452" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Recent Advances in Cosmological Singularities," <em>Symmetry 16 (2024) 3, 298</em>.
+                        <a href="https://doi.org/10.3390/sym16030298" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2309.08954" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi, Alexander V. Timoshkin</strong>, "Little rip, pseudo rip and bounce cosmology with generalized equation of state in non-standard backgrounds," <em>Eur.Phys.J.C 84 (2024) 3, 277</em>.
+                        <a href="https://doi.org/10.1140/epjc/s10052-024-12640-w" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2309.05047" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Type V singularities with inhomogeneous equations of state," <em>Phys.Lett.B 835 (2022), 137494</em>.
+                        <a href="https://doi.org/10.1016/j.physletb.2022.137494" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2209.07328" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Another look on the connections of Hubble tension with the Heisenberg Uncertainty Principle," <em>Phys.Dark Univ. 39 (2023), 101150</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2022.101150" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2207.10570" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov</strong>, "Singularity formation in asymptotically safe cosmology with inhomogeneous equation of state," <em>JCAP 11 (2022), 007</em>.
+                        <a href="https://doi.org/10.1088/1475-7516/2022/11/007" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2204.06437" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov</strong>, "Type V singularities in non-standard cosmological backgrounds," <em>Phys.Dark Univ. 36 (2022), 101041</em>.
+                        <a href="https://doi.org/10.1016/j.dark.2022.101041" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2202.06093" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi, Maxim Khlopov</strong>, "On finite time singularities in scalar field dark energy models based in the RS-II Braneworld," <em>Eur.Phys.J.C 82 (2022) 9, 800</em>.
+                        <a href="https://doi.org/10.1140/epjc/s10052-022-10767-2" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2201.01015" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Lorentz violating inflation and the swampland," <em>Eur.Phys.J.Plus 137 (2022) 4, 507</em>.
+                        <a href="https://doi.org/10.1140/epjp/s13360-022-02719-2" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2106.03578" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Rejuvenating the hope of a swampland consistent inflated multiverse with tachyonic inflation in the high-energy RS-II braneworld," <em>Mod.Phys.Lett.A 37 (2022) 24, 2250162</em>.
+                        <a href="https://doi.org/10.1142/S0217732322501620" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2101.00638" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Implications of single field inflation in general cosmological scenarios on the nature of dark energy given the swampland conjectures," <em>Int.J.Geom.Meth.Mod.Phys. 18 (2021) 14, 2150231</em>.
+                        <a href="https://doi.org/10.1142/S0219887821502315" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2011.14316" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "Swampland conjectures and single-field inflation in nonstandard cosmological scenarios," <em>Int.J.Mod.Phys.D 32 (2023) 01, 2250130</em>.
+                        <a href="https://doi.org/10.1142/S0218271822501309" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2008.05474" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Oem Trivedi</strong>, "The exact solution approach to warm inflation," <em>Astropart.Phys. 158 (2024), 102951</em>.
+                        <a href="https://doi.org/10.1016/j.astropartphys.2024.102951" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                        <a href="https://arxiv.org/abs/2008.05899" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv]</a>
+                    </li>
+                </ol>
+            </div>
 
-                <h2 class="section-subtitle">Conference Proceedings</h2>
-                 <div class="card">
-                    <ul class="list-disc list-inside space-y-4">
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Lorentz violating inflation and the Swampland," published in the conference proceedings for CPT'22 meeting. <a href="https://doi.org/10.1142/13383" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>R. Bernabei et.al.</strong>, "Proceedings to the 27th Workshop 'What Comes Beyond the Standard Models' Bled, July 8-17, 2024." <a href="https://doi.org/10.51746/9789612974848" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                    </ul>
-                </div>
-                
-                 <h2 class="section-subtitle">Invited Review Articles</h2>
-                 <div class="card">
-                    <ul class="list-disc list-inside space-y-4">
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Recent advances in cosmological singularities," <em>Symmetry</em> 16 (2024) 3, 298. <a href="https://doi.org/10.3390/sym16030298" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                        <li class="publication-item"><strong>O. Trivedi</strong>, "Quantum gravity in the skies?," <em>Astronomy & Geophysics</em>, Volume 65, Issue 5, October 2024. <a href="https://doi.org/10.1093/astrogeo/atae055" target="_blank" class="text-sky-500 hover:underline">[DOI]</a></li>
-                    </ul>
-                </div>
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">Preprints (Under Review)</h2>
+                <ol class="list-decimal list-inside space-y-6 text-slate-700 dark:text-slate-300">
+                    <li class="publication-item">
+                        <strong>O. Trivedi and A. Loeb</strong>, "On the Cosmological Constant-Graviton Mass correspondence."
+                        <a href="https://arxiv.org/abs/2411.12757" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2411.12757]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>S. Blitz, R.J. Scherrer and O. Trivedi</strong>, "A long freeze is hard to achieve in the presence of matter."
+                        <a href="https://arxiv.org/abs/2411.16344" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2411.16344]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>O. Trivedi</strong>, "Universality of Information Thermodynamics and the Efficiency of Information Erasure on the Cosmological Apparent Horizon."
+                        <a href="https://arxiv.org/abs/2407.15231" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2407.15231]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>O. Trivedi and R.J. Scherrer</strong>, "The long freeze: an asymptotically static universe from holographic dark energy."
+                        <a href="https://arxiv.org/abs/2409.11420" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2409.11420]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>O. Trivedi and M. Khlopov</strong>, "Holographic dark energy with Granda-Oliveros cutoff and ansatz based approach: An extended look."
+                        <a href="https://arxiv.org/abs/2405.15798" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2405.15798]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>J. Novak and O. Trivedi</strong>, "The old problem of the cosmological constant solved?."
+                        <a href="https://arxiv.org/abs/2505.22553" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2505.22553]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>O. Trivedi, M. Mishra and A. Ganesan</strong>, "Cosmological Frequency Combs."
+                        <a href="https://arxiv.org/abs/2507.01929" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2507.01929]</a>
+                    </li>
+                </ol>
+            </div>
 
-                <h2 class="section-subtitle">White Paper Authorships</h2>
-                <div class="card">
-                    <ul class="list-disc list-inside space-y-4">
-                        <li class="publication-item">Author on the "The Wide-field Spectroscopic Telescope (WST) Science White Paper," arXiv:2403.05398</li>
-                        <li class="publication-item">Author on the "Roman Galactic Plane Survey White paper," arXiv:2406.14767</li>
-                        <li class="publication-item">Author on the "COST Action Cosmoverse white paper," arXiv:2504.01669</li>
-                    </ul>
-                </div>
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">White Papers</h2>
+                <ol class="list-decimal list-inside space-y-6 text-slate-700 dark:text-slate-300">
+                    <li class="publication-item">
+                        <strong>Author on The Wide-field Spectroscopic Telescope (WST) Science White Paper</strong>
+                        <a href="https://arxiv.org/abs/2403.05398" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2403.05398]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Author on the Roman Galactic Plane Survey White paper</strong>
+                        <a href="https://arxiv.org/abs/2406.14767" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2406.14767]</a>
+                    </li>
+                     <li class="publication-item">
+                        <strong>Author on the COST Action Cosmoverse white paper</strong>
+                        <a href="https://arxiv.org/abs/2504.01669" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2504.01669]</a>
+                    </li>
+                </ol>
+            </div>
 
+            <div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 dark:text-white text-center">Conference Proceedings</h2>
+                <ol class="list-decimal list-inside space-y-6 text-slate-700 dark:text-slate-300">
+                    <li class="publication-item">
+                        <strong>O. Trivedi</strong>, "Lorentz violating inflation and the Swampland," published in the conference proceedings for CPT'22 meeting.
+                        <a href="https://arxiv.org/abs/2206.12619" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[arXiv:2206.12619]</a>
+                         <a href="https://doi.org/10.1142/13383" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                    </li>
+                    <li class="publication-item">
+                        <strong>R. Bernabei et.al.</strong>, "Proceedings to the 27th Workshop 'What Comes Beyond the Standard Models' Bled, July 8-17, 2024."
+                         <a href="https://doi.org/10.51746/9789612974848" target="_blank" class="ml-2 font-semibold text-sky-500 hover:underline">[DOI]</a>
+                    </li>
+                </ol>
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="py-16 text-center">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Get In Touch</h2>
             <p class="max-w-2xl mx-auto mb-8">
                 I am always open to discussing new research, ideas, or opportunities for collaboration.
             </p>
@@ -132,28 +270,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-100 dark:bg-slate-800/50 mt-16">
-        <div class="container mx-auto px-6 py-8 text-center text-slate-500 dark:text-slate-400">
+    <footer class="bg-gray-100 dark:bg-gray-800/50 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400">
             <p>&copy; <span id="year"></span> Oem Trivedi. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        lucide.createIcons();
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Update theme icon visibility based on theme
-        const themeObserver = new MutationObserver(() => {
-            const isDark = document.documentElement.classList.contains('dark');
-            document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-            document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-        });
-        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-
-        // Manually trigger initial check
-        const isDark = document.documentElement.classList.contains('dark');
-        document.getElementById('theme-icon-light').style.display = isDark ? 'none' : 'block';
-        document.getElementById('theme-icon-dark').style.display = isDark ? 'block' : 'none';
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

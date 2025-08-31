@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oem Trivedi - Portfolio</title>
+  <!-- Main CSS generated through npm run build -->
   <link href="./dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Explicitly configure Tailwind for class-based dark mode -->
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  
 </head>
 <!-- <body class="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-slate-900 dark:to-black transition-colors duration-300"></body> -->
 <!-- <body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300"> -->
@@ -33,33 +37,23 @@
         <div class="nav-item"><a href="talks.html">Talks</a></div>
         <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
         <div class="nav-item"><a href="honors.html">Honors</a></div>
-        <div class="nav-item"><a href="books.html">Books</a></div>
-        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
+        <div class="nav-item"><a href="media.html">Media Appearances</a></div>
         <div class="nav-item"><a href="#contact">Contact</a></div>
       </div>
     </nav>
     
     <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" 
-      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
-      aria-label="Toggle theme">
-      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-      </svg>
-      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-      </svg>
-    </button>
+    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
+          <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+          <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        </button>
   </div>
 </header>
-
 
     <main class="container mx-auto px-6 py-12">
         <!-- Hero Section -->
         <section id="about" class="text-center py-16">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">Oem Trivedi</h1>
+            <h1 class="text-5xl md:text-6xl font-semibold text-gray-900 dark:text-white mb-4">Oem Trivedi</h1>
             <p class="text-xl md:text-2xl text-sky-600 dark:text-sky-400 font-medium mb-8">Physics PhD Student at Vanderbilt University</p>
             <p class="max-w-3xl mx-auto text-lg mb-8">
                 A dedicated and accomplished researcher in the field of Physics and Astronomy, specializing in Cosmology, Quantum Gravity, and Dark Energy. Currently pursuing a PhD with a Discovery Doctoral Fellowship, with over 300 citations and an h-index of 9.
@@ -143,22 +137,22 @@
                     <li class="card flex items-start space-x-4">
                         <i data-lucide="mic" class="h-8 w-8 text-sky-500 mt-1"></i>
                         <div>
-                            <h4 class="font-semibold text-gray-800 dark:text-white">Russian Gravitational Conference</h4>
-                            <p class="text-sm">Peter the Great St. Petersburg University, 2020. Youngest speaker.</p>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">On the Trans-Planckian Censorship Conjecture and Constant Roll Inflation</h4>
+                            <p class="text-sm">Russian Gravitational Conference, Peter the Great St. Petersburg University, 2020. Youngest speaker.</p>
                         </div>
                     </li>
                     <li class="card flex items-start space-x-4">
                         <i data-lucide="presentation" class="h-8 w-8 text-sky-500 mt-1"></i>
                         <div>
-                            <h4 class="font-semibold text-gray-800 dark:text-white">Cosmology from Home</h4>
-                            <p class="text-sm">2020. Youngest speaker, received full fee waiver.</p>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">On the Swampland Conjectures and Single Field Inflation in General Cosmological Scenarios</h4>
+                            <p class="text-sm">Cosmology from Home 2020. Youngest speaker, received full fee waiver.</p>
                         </div>
                     </li>
                     <li class="card flex items-start space-x-4">
                         <i data-lucide="atom" class="h-8 w-8 text-sky-500 mt-1"></i>
                         <div>
-                            <h4 class="font-semibold text-gray-800 dark:text-white">CPT Meeting 2022</h4>
-                            <p class="text-sm">Indiana University Bloomington. Spoke on Lorentz Violating Inflation and the Swampland.</p>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">On Lorentz Violating Inflation and the Swampland</h4>
+                            <p class="text-sm"> CPT Meeting 2022, Indiana University Bloomington</p>
                         </div>
                     </li>
                 </ul>
@@ -209,7 +203,7 @@
         <!-- Detailed About Section -->
         <section id="detailed-about" class="py-16">
              <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">International Collaborations and Skills</h2>
-             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16">
+             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 px-12">
                 <div>
                     <h3 class="section-subtitle !text-2xl !text-left">International Collaborations</h3>
                      <div class="space-y-4">
