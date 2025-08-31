@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oem Trivedi - Portfolio</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<!-- <body class="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-slate-900 dark:to-black transition-colors duration-300"></body> -->
+<!-- <body class="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-colors duration-300"> -->
+<!-- Header & Navigation -->
+ <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200">
+
+
+<header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <a href="index.html" class="text-xl font-bold text-gray-800 dark:text-white">Oem Trivedi</a>
+    
+    <!-- Owl Carousel Navigation -->
+    <nav class="flex-1 mx-6">
+      <div class="owl-carousel owl-theme nav-carousel">
+        <div class="nav-item"><a href="#about">About</a></div>
+        <div class="nav-item"><a href="publications.html">Publications</a></div>
+        <div class="nav-item"><a href="talks.html">Talks</a></div>
+        <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
+        <div class="nav-item"><a href="honors.html">Honors</a></div>
+        <div class="nav-item"><a href="books.html">Books</a></div>
+        <div class="nav-item"><a href="collaborations.html">Collaborations</a></div>
+        <div class="nav-item"><a href="#contact">Contact</a></div>
+      </div>
+    </nav>
+    
+    <!-- Theme Toggle -->
+    <button onclick="toggleTheme()" 
+      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" 
+      aria-label="Toggle theme">
+      <svg id="theme-icon-light" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+      </svg>
+      <svg id="theme-icon-dark" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <section id="about" class="text-center py-16">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">Oem Trivedi</h1>
+            <p class="text-xl md:text-2xl text-sky-600 dark:text-sky-400 font-medium mb-8">Physics PhD Student at Vanderbilt University</p>
+            <p class="max-w-3xl mx-auto text-lg mb-8">
+                A dedicated and accomplished researcher in the field of Physics and Astronomy, specializing in Cosmology, Quantum Gravity, and Dark Energy. Currently pursuing a PhD with a Discovery Doctoral Fellowship, with over 300 citations and an h-index of 9.
+            </p>
+            <div class="flex justify-center items-center space-x-6 mb-8">
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=XHqDO44AAAAJ&hl=en" class="text-gray-500 hover:text-sky-500" title="Google Scholar"><i class="fa-brands fa-google-scholar fa-2x"></i></a>
+            <!-- arXiv -->
+            <!-- <a href="https://arxiv.org/search/hep-th?searchtype=author&query=Trivedi,+O" class="text-gray-500 hover:text-sky-500" title="arXiv"><i class="fa-solid fa-flask fa-2x"></i></a> -->
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/YOUR_ID" class="text-gray-500 hover:text-sky-500" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <!-- Inspire (placeholder: book icon, since no brand icon available) -->
+            <a href="https://inspirehep.net/authors/1924335?ui-citation-summary=true" class="text-gray-500 hover:text-sky-500" title="Inspire"><i class="fa-solid fa-book fa-2x"></i></a>
+            <!-- ORCID -->
+            <a href="https://orcid.org/0000-0002-2086-4127" class="text-gray-500 hover:text-sky-500" title="ORCID"><i class="fa-brands fa-orcid fa-2x"></i></a>
+            </div>
+            <div class="flex justify-center items-center space-x-10">
+                <span class="tag">Cosmology</span>
+                <span class="tag">Quantum Gravity</span>
+                <span class="tag">Dark Energy</span>
+            </div>
+        </section>
+
+        <!-- Publications Summary -->
+        <section id="publications-summary" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Selected Publications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Fractional Holographic Dark Energy</h3>
+                    <p class="mb-4 text-sm">Trivedi (first author), A. Bidlan and P. Moniz</p>
+                    <p class="mb-4">Physics Letters B, Volume 858, November 2024</p>
+                    <a href="https://doi.org/10.1016/j.physletb.2024.139074" target="_blank" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">Read Paper &rarr;</a>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">On rips and cosmological singularities in a universe merging with baby universes</h3>
+                    <p class="mb-4 text-sm">O. Trivedi (first author) and M. Khlopov</p>
+                    <p class="mb-4">JCAP 09 (2024) 040</p>
+                    <a href="https://doi.org/10.1088/1475-7516/2024/09/040" target="_blank" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">Read Paper &rarr;</a>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">New perspectives on future rip scenarios with holographic dark energy</h3>
+                    <p class="mb-4 text-sm">O. Trivedi (first author) and R.J. Scherrer</p>
+                    <p class="mb-4">Physical Review D 110, 023521</p>
+                    <a href="https://doi.org/10.1103/PhysRevD.110.023521" target="_blank" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">Read Paper &rarr;</a>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">The exact solution approach to warm inflation</h3>
+                    <p class="mb-4 text-sm">O. Trivedi</p>
+                    <p class="mb-4">Astroparticle Physics 158 (2024) 102951</p>
+                    <a href="https://doi.org/10.1016/j.astropartphys.2024.102951" target="_blank" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">Read Paper &rarr;</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                 <a href="#all-publications" class="bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition-colors duration-300">View All Publications</a>
+            </div>
+        </section>
+
+        <!-- Books -->
+        <section id="books" class="py-16 bg-gray-100 dark:bg-gray-800/50 rounded-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Authored Books</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6">
+                 <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Quantum Gravitational Imprints on Cosmology</h3>
+                    <p class="mb-4 text-sm">Oem Trivedi and Maxim Khlopov</p>
+                    <p class="mb-4">Published by World Scientific Publishing Company, sponsored for open access by CERN.</p>
+                    <a href="https://doi.org/10.1142/14123" target="_blank" class="font-medium text-sky-600 dark:text-sky-400 hover:underline">View Book &rarr;</a>
+                </div>
+                 <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Non-trivial Quantum Mechanics</h3>
+                    <p class="mb-4 text-sm">Oem Trivedi and Maxim Khlopov</p>
+                    <p class="mb-4">To be published by World Scientific Publishing Company (Feb 2026).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talks Summary -->
+        <section id="talks-summary" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Selected Talks & Seminars</h2>
+            <div class="max-w-3xl mx-auto">
+                <ul class="space-y-6">
+                    <li class="card flex items-start space-x-4">
+                        <i data-lucide="mic" class="h-8 w-8 text-sky-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Russian Gravitational Conference</h4>
+                            <p class="text-sm">Peter the Great St. Petersburg University, 2020. Youngest speaker.</p>
+                        </div>
+                    </li>
+                    <li class="card flex items-start space-x-4">
+                        <i data-lucide="presentation" class="h-8 w-8 text-sky-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Cosmology from Home</h4>
+                            <p class="text-sm">2020. Youngest speaker, received full fee waiver.</p>
+                        </div>
+                    </li>
+                    <li class="card flex items-start space-x-4">
+                        <i data-lucide="atom" class="h-8 w-8 text-sky-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-white">CPT Meeting 2022</h4>
+                            <p class="text-sm">Indiana University Bloomington. Spoke on Lorentz Violating Inflation and the Swampland.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <div class="text-center mt-12">
+                 <a href="talks.html" class="bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition-colors duration-300">View All Talks</a>
+            </div>
+        </section>
+
+        <!-- Honors and Awards -->
+        <section id="honors" class="py-16 bg-gray-100 dark:bg-gray-800/50 rounded-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Honors & Awards</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 px-6">
+                <div class="card flex items-center space-x-4">
+                    <i data-lucide="star" class="h-8 w-8 text-amber-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 dark:text-white">Fellow of the Royal Astronomical Society</h4>
+                        <p class="text-sm">2022-Present. Youngest fellow in the world.</p>
+                    </div>
+                </div>
+                 <div class="card flex items-center space-x-4">
+                    <i data-lucide="award" class="h-8 w-8 text-amber-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 dark:text-white">Pride of Indore & Pride of MP</h4>
+                        <p class="text-sm">Conferred by Member of Parliament and the state government of Madhya Pradesh, India.</p>
+                    </div>
+                </div>
+                 <div class="card flex items-center space-x-4">
+                    <i data-lucide="award" class="h-8 w-8 text-amber-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 dark:text-white">InRes Young Scientist Award</h4>
+                        <p class="text-sm">2022</p>
+                    </div>
+                </div>
+                 <div class="card flex items-center space-x-4">
+                    <i data-lucide="book" class="h-8 w-8 text-amber-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 dark:text-white">India Book of Records Holder</h4>
+                        <p class="text-sm">Highest number of technical research talks given by an Asian undergraduate student.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-12">
+                 <a href="honors.html" class="bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition-colors duration-300">View All Honors</a>
+            </div>
+        </section>
+        
+        <!-- Detailed About Section -->
+        <section id="detailed-about" class="py-16">
+             <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">International Collaborations and Skills</h2>
+             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="section-subtitle !text-2xl !text-left">International Collaborations</h3>
+                     <div class="space-y-4">
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">Member of the LSST Dark Energy Science Collaboration (DESC)</div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">Member of the Cosmic Explorer Consortium</div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">Member of the Wide Field Spectroscopic Telescope (WST) science team</div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">Member of the COST Action Cosmoverse collaboration</div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">Member of the Southeastern European Network for Mathematical and Theoretical Physics (SEENET-MTP)</div>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="section-subtitle !text-2xl !text-left">Computational Skills</h3>
+                     <div class="space-y-4">
+                        <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Python</h4>
+                            <p class="text-sm">Very fluent in computational methods for uses in Physics, particularly in Cosmology.</p>
+                        </div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                            <h4 class="font-semibold text-gray-800 dark:text-white">Mathematica</h4>
+                            <p class="text-sm">Advanced proficiency for symbolic computation and data analysis in cosmological research.</p>
+                        </div>
+                         <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                            <h4 class="font-semibold text-gray-800 dark:text-white">MATLAB</h4>
+                            <p class="text-sm">Skilled in using MATLAB for numerical simulations and modeling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white text-center">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto mb-8">
+                I am always open to discussing new research, ideas, or opportunities for collaboration.
+            </p>
+            <div class="inline-flex items-center space-x-4 p-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+                <i data-lucide="mail" class="h-6 w-6 text-sky-500"></i>
+                <a href="mailto:oem.trivedi@vanderbilt.edu" class="text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-sky-500 dark:hover:text-sky-400">
+                    oem.trivedi@vanderbilt.edu
+                </a>
+            </div>
+             <p class="mt-8 text-sm text-gray-500 dark:text-gray-400">
+                Department of Physics and Astronomy<br>
+                Vanderbilt University, Nashville, TN, 37235, USA
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800/50 mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500 dark:text-gray-400">
+            <p>&copy; <span id="year"></span> Oem Trivedi. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
