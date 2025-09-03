@@ -23,30 +23,60 @@
  <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200">
 
 
-<header class="sticky top-0 z-50 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<header class="sticky top-0 z-50 w-full bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
     
     <!-- Logo -->
     <a href="index.html" class="text-xl font-bold text-gray-800 dark:text-white">Oem Trivedi</a>
-    
-    <!-- Owl Carousel Navigation -->
-    <nav class="flex-1 mx-6">
-      <div class="owl-carousel owl-theme nav-carousel">
-        <div class="nav-item"><a href="index.html">About</a></div>
-        <div class="nav-item"><a href="publications.html">Publications</a></div>
-        <div class="nav-item"><a href="talks.html">Talks</a></div>
-        <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
-        <div class="nav-item"><a href="honors.html">Honors</a></div>
-        <div class="nav-item"><a href="media.html">Media Appearances</a></div>
-        <div class="nav-item"><a href="#contact">Contact</a></div>
-      </div>
-    </nav>
-    
-    <!-- Theme Toggle -->
-    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle theme">
-          <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
-          <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
-        </button>
+
+    <!-- Right side: Nav + Theme -->
+    <div class="flex items-center space-x-3">
+      <!-- Nav -->
+      <nav class="hidden md:block">
+        <div class="owl-carousel owl-theme nav-carousel">
+          <div class="nav-item"><a href="index.html">About</a></div>
+          <div class="nav-item"><a href="publications.html">Publications</a></div>
+          <div class="nav-item"><a href="talks.html">Talks</a></div>
+          <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
+          <div class="nav-item"><a href="honors.html">Honors</a></div>
+          <div class="nav-item"><a href="media.html">Media Appearances</a></div>
+          <div class="nav-item"><a href="#contact">Contact</a></div>
+        </div>
+      </nav>
+
+      <!-- Theme Toggle -->
+      <button onclick="toggleTheme()" 
+        class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+        aria-label="Toggle theme">
+        <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-slate-200 dark:hover:bg-slate-700">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <div class="flex flex-col gap-2">
+      <div class="nav-item"><a href="index.html">About</a></div>
+      <div class="nav-item"><a href="publications.html">Publications</a></div>
+      <div class="nav-item"><a href="talks.html">Talks</a></div>
+      <div class="nav-item"><a href="journals.html">Referred Journals</a></div>
+      <div class="nav-item"><a href="honors.html">Honors</a></div>
+      <div class="nav-item"><a href="media.html">Media Appearances</a></div>
+      <div class="nav-item"><a href="#contact">Contact</a></div>
+
+      <!-- Theme toggle inside mobile menu -->
+      <button onclick="toggleTheme()" 
+        class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors mt-2 self-start">
+        <svg id="theme-icon-light" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+        <svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
+      </button>
+    </div>
   </div>
 </header>
 
